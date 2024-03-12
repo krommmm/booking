@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="./css/styles.css" />
+		<script
+			src="https://kit.fontawesome.com/65211b898e.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Accueil</title>
+	</head>
+	<body>
+		<header>
+			<div class="console">
+				<a href="./index.html"><p>Accueil</p></a>
+			</div>
+			<h1>Booking _</h1>
+			<h2>Réservez un logement</h2>
+		</header>
+		<div class="agenda">
+			<button id="btn-calendar" class="btn false">Calendar</button>
+		</div>
+		<section class="logements">
+			<div class="photo_zone"></div>
+		</section>
+		<section class="calendar top">
+			<div class="modal hidden">
+				<div class="modal_content">
+					<div class="arrow left-arrow">
+						<i class="fa-solid fa-angles-left"></i>
+					</div>
+					<div class="arrow right-arrow">
+						<i class="fa-solid fa-angles-right"></i>
+					</div>
+					<div class="when">
+						<button class="start btn">Départ</button>
+						<button class="end btn">Arrivée</button>
+						<button class="search btn">Chercher</button>
+						<button class="close-calendar btn-red">X</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="dist/bundle.js"></script>
+	</body>
+</html>

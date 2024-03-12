@@ -1,0 +1,471 @@
+@font-face {
+	font-family: 'catchLand';
+	src: url('../fonts/Catchland_PERSONAL_USE_ONLY.otf');
+}
+
+body {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.console {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 1px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	font-weight: 600;
+}
+.console a {
+	color: white;
+	text-decoration: none;
+}
+h1 {
+	font-family: catchland;
+}
+.calendar {
+	position: absolute;
+	top: 100px;
+	left: 30%;
+	z-index: 9;
+	transition-duration: 1s;
+	transform: translateY(50%);
+}
+
+.modal_content {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid black;
+	padding: 5px;
+	width: 100%;
+	background-color: white;
+}
+
+.modal_content .title {
+	display: flex;
+}
+.modal_content .title .month {
+	margin-right: 5px;
+}
+
+.days {
+	display: flex;
+}
+
+.days .day {
+	margin: 15px;
+	border: 1px solid black;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.start,
+.end {
+	margin-top: 15px;
+}
+
+.modal_content {
+	position: relative;
+	width: 800px;
+	overflow: hidden;
+	border-radius: 15px;
+}
+.arrow {
+	position: absolute;
+	top: 10px;
+	cursor: pointer;
+	z-index: 10;
+	font-size: 20px;
+}
+.left-arrow {
+	left: 15px;
+}
+.right-arrow {
+	right: 15px;
+}
+
+.container {
+	margin: 10px;
+}
+#diapo_container {
+	display: flex;
+	transition-duration: 0.5s;
+	margin-top: 25px;
+}
+.mois {
+	width: 400px;
+}
+
+.divPara {
+	display: flex;
+}
+.divPara .paraMonth {
+	margin-right: 5px;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.divPara .paraYear {
+	font-weight: 600;
+	text-transform: capitalize;
+}
+th {
+	color: grey;
+}
+td {
+	width: 10px;
+	height: 10px;
+	padding: 15px;
+}
+.joursSemaine {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.2);
+	text-align: center;
+	width: 10px;
+	height: 10px;
+}
+.joursSemaine:hover {
+	border: 1px solid black;
+	width: 10px;
+	height: 10px;
+	padding: 1px;
+}
+
+.when {
+	position: absolute;
+	top: 0px;
+	left: 40%;
+}
+.when .start {
+	margin-right: 5px;
+	background-color: green;
+}
+.grey {
+	background-color: grey;
+}
+.green {
+	background-color: green;
+}
+
+.choosenOneDepart {
+	background-color: green;
+}
+
+.choosenOneArrivee {
+	background-color: purple;
+}
+
+.logements {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	width: 100%;
+}
+.photo_zone {
+	width: 100%;
+	display: flex;
+	justify-content:center;
+}
+.photo_zone a {
+	text-decoration: none;
+	color: inherit;
+}
+.logements_img {
+	width: 200px;
+	height: 200px;
+	border-radius: 5px;
+}
+
+article {
+	margin: 10px;
+}
+article .titre {
+	font-weight: 600;
+	font-size: 17px;
+}
+.gras {
+	font-weight: 600;
+}
+.logements .photo_zone a article .prix {
+	display: flex;
+}
+
+.focus {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	border-radius: 5px;
+}
+.focus .container_principal {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	padding: 10px;
+	margin-right: 20px;
+	border-radius: 5px;
+}
+.focus .container_principal .title {
+	font-weight: 600;
+	font-size: 25px;
+}
+.focus .container_principal .description_title {
+	margin: 0px;
+	margin-top: 0px;
+	margin-top: 17px;
+	font-weight: 600;
+}
+.focus .container_principal .description {
+	margin: 0px;
+	margin-top: 0px;
+	margin-top: 6px;
+}
+
+.focus .container_principal img {
+	width: 300px;
+}
+.focus .container_principal .description {
+	max-width: 400px;
+}
+
+.focus .fiche_focus {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	padding: 5px;
+	border-radius: 5px;
+}
+.focus .fiche_focus .title,
+.focus .fiche_focus .carré,
+.focus .fiche_focus .calculs {
+	display: flex;
+	flex-direction: column;
+}
+.focus .fiche_focus .carré {
+	flex-direction: column;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.voyageurs {
+	border-top: 1px solid black;
+}
+#btn-louer {
+	margin-top: 10px;
+}
+.focus .fiche_focus .carré .carré_when {
+	display: flex;
+	width: 100%;
+}
+.focus .fiche_focus .carré .carré_when .arrivee,
+.focus .fiche_focus .carré .carré_when .depart {
+	width: 100%;
+}
+
+.focus .calculs .nuits,
+.focus .calculs .total {
+	display: flex;
+}
+.focus .calculs .frais {
+	display: flex;
+	flex-direction: column;
+}
+
+.focus .calculs .frais .frais_booking,
+.focus .calculs .frais .taxes {
+	display: flex;
+}
+
+#btn-calendar {
+	cursor: pointer;
+}
+
+.btn {
+	width: 100px;
+	padding: 5px;
+	color: white;
+	font-weight: 600;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition-duration: 0.2s;
+	background-color: rgb(9, 1, 109);
+}
+.btn:active {
+	transform: scaleX(0.8);
+}
+
+.btn-red {
+	width: 30px;
+	padding: 5px;
+
+	font-weight: 600;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition-duration: 0.2s;
+	background-color: white;
+	border: 1px solid black;
+	color: red;
+}
+.btn-red:active {
+	transform: scaleX(0.8);
+}
+
+.blur{
+	filter: blur(3px);
+}
+
+article .titre{
+	margin:0px;
+	margin-top:1px;
+}
+article .type{
+	margin:0px;
+	margin-top:1px;
+}
+article .prix{
+	margin:0px;
+	margin-top:1px;
+}
+
+
+@media screen and (max-width: 1500px) {
+	.calendar {
+		left: 20%;
+	}
+}
+@media screen and (max-width: 1050px) {
+	.calendar {
+		left: 50px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.photo_zone {
+		width: 66%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	  }
+}
+
+@media screen and (max-width: 880px) {
+	body .focus {
+		flex-direction: column;
+		width: 90%;
+	}
+	
+	
+	.focus .container_principal {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid black;
+		padding: 10px;
+		margin-right: 0px;
+		border-radius: 5px;
+		margin-bottom: 15px;
+	}
+	.focus .container_principal img {
+		width: 50%;
+	}
+
+	body .start{
+		position:fixed;
+		top:3px;
+		left: 2px;
+		margin:0px;
+		margin-top:5px;
+		margin-left: 5px;
+	}
+	body .end{
+		position:fixed;
+		top:3px;
+		left: 83px;
+		margin:0px;
+		margin-top:5px;
+		margin-left: 5px;
+	}
+	body .search{
+		position:fixed;
+		top:3px;
+		left: 166px;
+		margin:0px;
+		margin-top:5px;
+		margin-left: 5px;
+	}
+	body .close-calendar{
+		position:fixed;
+		top:3px;
+		right: 10px;
+		margin:0px;
+		margin-top:5px;
+		
+	}
+	.focus .fiche_focus {
+		margin-bottom: 15px;
+	}
+	.modal_content {
+		width: 300px;
+	}
+
+	td {
+		width: 1px;
+		height: 1px;
+		padding: 1px;
+	}
+	.joursSemaine {
+		border: 1px solid black;
+		width: 1px;
+		height: 1px;
+		padding: 1px;
+	}
+	.table {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.modal_content {
+		overflow: scroll;
+		height: 475px;
+	}
+	#diapo_container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	body .fa-angles-left, body .fa-angles-right{
+		display:none;
+	}
+	.when{
+		left:0px;
+	}
+	.btn{
+		width: 74px;
+	}
+	.calendar{
+		left:25vw;
+	}
+}
+@media screen and (max-width: 500px) {
+	.calendar{
+		left:10vw;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.calendar{
+		left:10px;
+	}
+}
+@media screen and (max-width: 333px) {
+	.calendar{
+		left:0px;
+	}
+}
